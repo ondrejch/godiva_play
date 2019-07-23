@@ -14,27 +14,33 @@ def deck(e:float = 93.0, r:float = 8.7407)->str:
     Outputs:
         output: String containing the Godiva deck for Serpent'''
 
-    radius     = r
-    enrichment = e/100.0
+    radius     = r          # sphere radius
+    cylradius  = r*3.0      # water tank cylinder radius
+    cylhheight = r*2.0      # water tank half height
+    enrichment = e/100.0    # enrichment as a weight fraction
     remainder  = 1.0 - enrichment 
     output ='''set title "Godiva enrichment = {e} %, radius = {radius} cm"
 
 %-----define the sphere's surface-----
 surf 1 sph 0 0 0 {radius}
 
+%-----define the water tank's surface-----
+surf 2 cylz 0 0 {cylradius} -{cylhheight} {cylhheight}
+
 %-----define cells-----
-cell 1 0 uranium -1
-cell 2 0 outside 1
+cell  1 0 uranium -1
+cell  2 0 water 1 -2
+cell 99 0 outside 2
 
 %-----define materials-----
-mat uranium -18.74 % density 18.74 g/cm^3
+mat uranium -18.74 rgb 250 40 40 % density 18.74 g/cm^3
 92235.03c -{enrichment}
 92238.03c -{remainder}
 
 % --- Water at 1.0 g/cm3
 %     Defined using atomic fractions for the composition. 
 %     Hydrogen is flagged as a bound scatterer with the "moder"-card
-mat water    -1.0 moder MyThermLib 1001
+mat water    -1.0 moder MyThermLib 1001  rgb 10 250 10
  1001.03c     2.0
  8016.03c     1.0
 % --- Define thermal scattering libraries associated with hydrogen in light water
@@ -44,6 +50,7 @@ therm MyThermLib lwj3.00t
 set pop 5000 120 20 % 1000 neutrons per cycle, 120 cycles, 20 of them inactive
 
 %-----plot geometry-----
+% plot 2 200 200
 % plot 3 200 200
 
 %-----set xs library locations-----
@@ -51,7 +58,8 @@ set acelib "/opt/serpent/xsdata/sss_endfb7u.xsdata"
 set declib "/opt/serpent/xsdata/sss_endfb7.dec"
 set nfylib "/opt/serpent/xsdata/sss_endfb7.nfy"
 '''
-    output = output.format(**locals())    return output
+    output = output.format(**locals())    
+    return output
 
 
 def runfile(filename:str='godiva.inp', queue:str='fill', cores:int=8)->str:
