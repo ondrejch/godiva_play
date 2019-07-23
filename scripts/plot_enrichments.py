@@ -8,10 +8,17 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-# enrichment values to test critical enrichment [%]
-enrichments = np.arange(80.0, 100.1 , 2.0)
-k = np.zeros(len(enrichments))
-ke= np.zeros(len(enrichments))
+# find enrichment values dirs
+arr_enr = []
+mydir = os.listdir()    # list current directory
+for d in mydir:         # find all  with "enr"
+    if "enr" in d:
+        arr_enr.append(float(d.replace("enr_",""))) # covnert to float
+
+enrichments = np.arrray(arr_enr) # make numpy array
+
+k = np.zeros(len(enrichments))  # k_eff
+ke= np.zeros(len(enrichments))  # sigma(k_eff)
 for i, e in np.ndenumerate(enrichments):
     e_dir = 'enr_'+"{:06.2f}".format(e)
     with open(e_dir+'/done.out') as f:
