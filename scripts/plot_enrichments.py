@@ -8,13 +8,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
+verbose:bool = True
+
 # find enrichment values dirs
 arr_enr = []
 mydir = os.listdir()    # list current directory
 for d in mydir:         # find all  with "enr"
     if "enr" in d:
         arr_enr.append(float(d.replace("enr_",""))) # covnert to float
-
+arr_enr.sort()                  # sort the array
 enrichments = np.array(arr_enr) # make numpy array
 
 k = np.zeros(len(enrichments))  # k_eff
@@ -26,7 +28,16 @@ for i, e in np.ndenumerate(enrichments):
     k[i] = tk               # k_eff
     ke[i]= tkerr            # sigma(k_eff)
 
-# make plot
-plt.errorbar(enrichments,k,ke)
-plt.show()
+if verbose:
+    print(enrichments)
+    print(k)
+    print(ke)
 
+# make plot
+plt.errorbar(enrichments, k, ke, color="red")
+plt.title('Godiva in a water tank')
+plt.xlabel('fuel enrichment [%]')
+plt.ylabel(r'k_{eff}')
+plt.grid(True)
+#plt.show()
+plt.savefig('fig_escan.png')
