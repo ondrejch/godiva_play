@@ -15,7 +15,7 @@ for d in mydir:         # find all  with "enr"
     if "enr" in d:
         arr_enr.append(float(d.replace("enr_",""))) # covnert to float
 
-enrichments = np.arrray(arr_enr) # make numpy array
+enrichments = np.array(arr_enr) # make numpy array
 
 k = np.zeros(len(enrichments))  # k_eff
 ke= np.zeros(len(enrichments))  # sigma(k_eff)
