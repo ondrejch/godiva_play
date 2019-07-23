@@ -15,7 +15,7 @@ with open(qsubfile,"w") as f:
     f.write(godiva.runfile(deckfile))
 
 # enrichment values to test critical enrichment [%]
-enrichments = np.arange(80.0, 100.1 , 2.0) 
+enrichments = np.arange(20.0, 80.1 , 2.0) 
 for e in enrichments:
     e_dir = 'enr_'+"{:06.2f}".format(e)
     os.makedirs(e_dir, exist_ok=True)   # make dir for the job
