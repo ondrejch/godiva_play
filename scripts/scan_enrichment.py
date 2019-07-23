@@ -21,7 +21,7 @@ for e in enrichments:
     os.makedirs(e_dir, exist_ok=True)   # make dir for the job
     os.chdir(e_dir)                     # change into that directory
     with open(deckfile,"w") as f:       # write the deck file
-        f.write(godiva.deck())
+        f.write(godiva.deck(e))         # with enrichment e
     os.system("qsub ../" + qsubfile)    # submit the job
     os.chdir("..")                      # cd back to the original directory
 
