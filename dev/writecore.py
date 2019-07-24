@@ -33,7 +33,7 @@ e_fuel  = args['enrichment']
 #    quit("Number of ports has to be 0, 1, 2, or 3")
 
 # Make the deck
-s2_deck = godiva.deck(r_fuel, e_fuel)
+s2_deck = godiva.deck(e_fuel, r_fuel)
 fname   = dirname + filename
 print("Writing Godiva deck for core radius ",r_fuel," cm, enrichment ",
     e_fuel, "%.")
