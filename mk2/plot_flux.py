@@ -51,5 +51,5 @@ plt.ylabel("{:.2E}".format(scale) + '* Flux along X dimension [n/s/cm2]')
 plt.grid(True)
 plt.legend(loc='upper right')
 #plt.show()
-plt.savefig('fig_fluxes.png', dpi=300)
+plt.savefig('fig_fluxes.png', dpi=150)
 
