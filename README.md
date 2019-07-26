@@ -1,5 +1,5 @@
 # godiva_play
-Goofing with Godiva
+Goofing with Godiva!
 
 Learn Serpent with Python!
 
