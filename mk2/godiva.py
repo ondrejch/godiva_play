@@ -95,7 +95,7 @@ dz -{ddh} {ddh} 1
 
 
 def runfile(filename:str='godiva.inp', queue:str='fill', cores:int=8)->str:
-    output = '''Writes run file for TORQUE.
+    '''Writes run file for TORQUE.
     Inputs:
         filename:   Serpent deck file name
         queue:      cluster queue
