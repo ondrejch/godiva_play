@@ -1,0 +1,17 @@
+git commands & help
+
+git pull --> pull all schtuff so that you can make changes to the most current versions
+
+git mv mk4/ ashley --> rename directory
+
+git commit -m "comment about new whatever!" --> commit something (saves it kinda before you push it)
+
+git push --> push your commits to the repository
+
+git add githelp.txt --> after you make a file, you have to add it to the repository
+
+git diff --> see changes from previous version
+
+
+
+git config --global --edit --> can change author info
