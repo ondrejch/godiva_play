@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 ##### SerpentTools based Plot and Gif Creator Using .res, .dep, and .bumat Files
 ##### Written by Luke Seifert
 ##### Last Updated: 8/7/2019
@@ -161,6 +162,8 @@ for burnup in range(len(isotope_dictionary)):
         x = ((np.arange(divisions) * total_radius) /
              max(np.arange(divisions))) # Radius
         plt.plot(x, y)
+        plt.yscale('log')
+        plt.ylim(1e-15,1e-3)
         plt.xlabel('Radius [cm]')
         plt.ylabel('Isotope Concentration')
         legend_list.append(iso)
