@@ -4,13 +4,15 @@ git pull --> pull all schtuff so that you can make changes to the most current v
 
 git mv mk4/ ashley --> rename directory
 
-git commit -m "comment about new whatever!" --> commit something (saves it kinda before you push it)
-
-git push --> push your commits to the repository
+git rm readme.txt --> removes file readme.txt
 
 git add githelp.txt --> after you make a file, you have to add it to the repository
 
 git diff --> see changes from previous version
+
+git commit -m "comment about new whatever!" --> commits all of the changes you have made anywhere in the repository
+
+git push --> push your commits to the repository
 
 
 
