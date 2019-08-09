@@ -1,5 +1,16 @@
 git commands & help
 
+first, make a special git directory so other things aren't mixed with it and messed up
+change into that directory, and then follow the steps below:
+
+first make a key so that github recognizes your computer
+to make key, go to settings on github, set a title, paste the output from the command below into the key section:
+cat ~/.ssh/id_rsa.pub
+next:
+git clone git@github.com:ondrejch/godiva_play.git --> make a clone of the repository on your computer
+
+
+
 git pull --> pull all schtuff so that you can make changes to the most current versions
 
 git mv mk4/ ashley --> rename directory
