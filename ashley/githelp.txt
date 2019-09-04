@@ -26,5 +26,8 @@ git commit -m "comment about new whatever!" --> commits all of the changes you h
 git push --> push your commits to the repository
 
 
+git checkout -b ashley --> switch to new branch 'ashley'
+
+
 
 git config --global --edit --> can change author info
