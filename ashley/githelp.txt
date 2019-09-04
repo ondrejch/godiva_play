@@ -28,6 +28,8 @@ git push --> push your commits to the repository
 
 git checkout -b ashley --> switch to new branch 'ashley'
 git branch -a --> shows all branches and stars which one you are working on
+git push --set-upstream origin ashley  --> after you add things and commit them, this lets you push things from your branch
+
 
 
 
