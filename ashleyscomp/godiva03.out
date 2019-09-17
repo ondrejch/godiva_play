@@ -1,0 +1,2472 @@
+
+  _                   .-=-.           .-=-.          .-==-.       
+ { }      __        .' O o '.       .' O o '.       /  -<' )--<   
+ { }    .' O'.     / o .-. O \     / o .-. O \     /  .---`       
+ { }   / .-. o\   /O  /   \  o\   /O  /   \  o\   /O /            
+  \ `-` /   \ O`-'o  /     \  O`-'o  /     \  O`-`o /             
+   `-.-`     '.____.'       `._____.'       `.____.'              
+
+Serpent 2 beta
+
+A Continuous-energy Monte Carlo Reactor Physics Burnup Calculation Code
+
+ - Version 2.1.31 (May 16, 2019) -- Contact: serpent@vtt.fi
+
+ - Reference: J. Leppanen, et al. "The Serpent Monte Carlo code: Status,
+              development and applications in 2013." Ann. Nucl. Energy,
+              82 (2015) 142-150.
+
+ - Compiled May 16 2019 10:33:27
+
+ - MPI Parallel calculation mode available
+
+ - OpenMP Parallel calculation mode available
+
+ - Geometry and mesh plotting available
+
+ - Default data path set to: "/opt/serpent/xsdata"
+
+Begin calculation on Fri Aug 23 08:30:27 2019
+
+Reading input file "godiva03.inp"...
+
+Checking duplicate input definitions...
+OK.
+
+Creating geometry...
+OK.
+
+Counting geometry zones...
+
+Processing cells...
+OK.
+
+Linking materials to geometry...
+OK.
+
+Counting cells...
+OK.
+
+Processing data for group constant generation:
+
+ - 70 energy groups in micro-group structure
+ - 2 energy groups in macro-group structure
+ - B1 fundamental mode calculation is not run
+ - Group constants generated in 1 universes
+ - Discontinuity factors are not calculated
+ - Pin-power distributions are not calculated
+ - Albedos are not calculated
+ - Poison cross sections are not calculated
+
+Plotting geometry:
+
+   0% complete
+  50% complete
+ 100% complete
+
+Reading ACE directory files...
+OK.
+
+Reading neutron-induced fission yields...
+OK.
+
+Adding nuclides in material uranium...
+
+Nuclide  92235.03c -- uranium 235 at 300K (U-235)
+Nuclide  92238.03c -- uranium 238 at 300K (U-238)
+
+Adding nuclides in material water...
+
+Nuclide   1001.03c -- hydrogen at 300K (H-1)
+Nuclide   8016.03c -- oxygen 16 at 300K (O-16)
+
+Adding thermal scattering data...
+
+Nuclide   lwj3.00t -- hydrogen at 294K (H-1)
+
+Checking data and printing output...
+OK.
+
+Generating unionize energy grids...
+
+Adding points:
+
+  1001.03c -- Points added in neutron grid: 252
+  1001.03s -- Points added in neutron grid: 91
+  8016.03c -- Points added in neutron grid: 2353
+ 92235.03c -- Points added in neutron grid: 30672
+ 92238.03c -- Points added in neutron grid: 64861
+
+Generating unionized energy grid:
+
+ - Unionization performed without grid thinning
+   between 1.00E-11 and 20.0 MeV.
+
+ - Final neutron grid size: 98053 points.
+
+ - 3.29 Mb of memory allocated for grid data
+
+OK.
+
+Processing cross sections and ENDF reaction laws...
+
+Nuclide   1001.03c -- hydrogen at 300K (H-1)
+Nuclide   1001.03s -- hydrogen at 300K (H-1)
+Nuclide   8016.03c -- oxygen 16 at 300K (O-16)
+Nuclide  92235.03c -- uranium 235 at 300K (U-235)
+Nuclide  92238.03c -- uranium 238 at 300K (U-238)
+
+SUMMARY -- 5 nuclides included in calculation:
+
+ - 5 transport nuclides
+ - Neutron energy cut-offs at 1.00E-11 and 20.0 MeV
+ - 118 transport reactions
+ - 29 special reactions
+ - 4 decay reactions
+ - 25.46 Mb of memory allocated for data
+
+Normalizing compositions and processing mixtures...
+OK.
+
+Allocating memory for macroscopic cross section data...
+OK.
+
+Allocating memory for particle structures...
+OK.
+
+Calculating maximum densities...
+OK.
+
+Performing density cut-off...
+OK.
+
+Sorting material-wise reaction lists:
+
+   0% complete
+ 100% complete
+
+Calculating macroscopic cross sections:
+
+   0% complete
+ 100% complete
+
+Calculating DT neutron majorant cross section:
+
+   0% complete
+ 100% complete
+
+Clearing results and statistics...
+OK.
+
+Sampling initial source...
+OK.
+
+Inactive cycle   1 /  20: k-eff = 1.00000
+Inactive cycle   2 /  20: k-eff = 0.81480
+Inactive cycle   3 /  20: k-eff = 0.74489
+Inactive cycle   4 /  20: k-eff = 0.77290
+Inactive cycle   5 /  20: k-eff = 0.72158
+Inactive cycle   6 /  20: k-eff = 0.72749
+Inactive cycle   7 /  20: k-eff = 0.74845
+Inactive cycle   8 /  20: k-eff = 0.75354
+Inactive cycle   9 /  20: k-eff = 0.76620
+Inactive cycle  10 /  20: k-eff = 0.77861
+Inactive cycle  11 /  20: k-eff = 0.75073
+Inactive cycle  12 /  20: k-eff = 0.75869
+Inactive cycle  13 /  20: k-eff = 0.76658
+Inactive cycle  14 /  20: k-eff = 0.73561
+Inactive cycle  15 /  20: k-eff = 0.76474
+Inactive cycle  16 /  20: k-eff = 0.76887
+Inactive cycle  17 /  20: k-eff = 0.73135
+Inactive cycle  18 /  20: k-eff = 0.78181
+Inactive cycle  19 /  20: k-eff = 0.75695
+Inactive cycle  20 /  20: k-eff = 0.73545
+
+----- Begin active cycles -----
+
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle    1 / 120  Source neutrons :  5198
+
+Running time :                  0:00:04
+Estimated running time :        -:--:--
+Estimated running time left :   -:--:--
+
+Estimated relative CPU usage :   793.9%
+
+k-eff (analog)    = 0.76458 +/- 0.00000  [0.76458  0.76458]
+k-eff (implicit)  = 0.73980 +/- 0.00000  [0.73980  0.73980]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle    2 / 120  Source neutrons :  4849
+
+Running time :                  0:00:04
+Estimated running time :        -:--:--
+Estimated running time left :   -:--:--
+
+Estimated relative CPU usage :   793.8%
+
+k-eff (analog)    = 0.75303 +/- 0.01155  [0.73041  0.77566]
+k-eff (implicit)  = 0.74544 +/- 0.00564  [0.73438  0.75651]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle    3 / 120  Source neutrons :  4850
+
+Running time :                  0:00:04
+Estimated running time :        -:--:--
+Estimated running time left :   -:--:--
+
+Estimated relative CPU usage :   800.1%
+
+k-eff (analog)    = 0.74177 +/- 0.01309  [0.71612  0.76742]
+k-eff (implicit)  = 0.75248 +/- 0.00776  [0.73728  0.76769]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle    4 / 120  Source neutrons :  5398
+
+Running time :                  0:00:05
+Estimated running time :        -:--:--
+Estimated running time left :   -:--:--
+
+Estimated relative CPU usage :   794.1%
+
+k-eff (analog)    = 0.75045 +/- 0.01269  [0.72558  0.77532]
+k-eff (implicit)  = 0.74778 +/- 0.00723  [0.73361  0.76194]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle    5 / 120  Source neutrons :  4762
+
+Running time :                  0:00:05
+Estimated running time :        -:--:--
+Estimated running time left :   -:--:--
+
+Estimated relative CPU usage :   797.9%
+
+k-eff (analog)    = 0.74827 +/- 0.01007  [0.72853  0.76800]
+k-eff (implicit)  = 0.75059 +/- 0.00626  [0.73831  0.76286]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle    6 / 120  Source neutrons :  5113
+
+Running time :                  0:00:05
+Estimated running time :        -:--:--
+Estimated running time left :   -:--:--
+
+Estimated relative CPU usage :   801.3%
+
+k-eff (analog)    = 0.74960 +/- 0.00833  [0.73328  0.76592]
+k-eff (implicit)  = 0.74878 +/- 0.00542  [0.73815  0.75941]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle    7 / 120  Source neutrons :  4958
+
+Running time :                  0:00:05
+Estimated running time :        -:--:--
+Estimated running time left :   -:--:--
+
+Estimated relative CPU usage :   797.8%
+
+k-eff (analog)    = 0.74964 +/- 0.00704  [0.73585  0.76344]
+k-eff (implicit)  = 0.75339 +/- 0.00650  [0.74065  0.76613]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle    8 / 120  Source neutrons :  5200
+
+Running time :                  0:00:05
+Estimated running time :        -:--:--
+Estimated running time left :   -:--:--
+
+Estimated relative CPU usage :   794.0%
+
+k-eff (analog)    = 0.75342 +/- 0.00717  [0.73936  0.76748]
+k-eff (implicit)  = 0.75362 +/- 0.00563  [0.74258  0.76466]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle    9 / 120  Source neutrons :  4905
+
+Running time :                  0:00:06
+Estimated running time :        -:--:--
+Estimated running time left :   -:--:--
+
+Estimated relative CPU usage :   802.0%
+
+k-eff (analog)    = 0.75472 +/- 0.00646  [0.74206  0.76737]
+k-eff (implicit)  = 0.75427 +/- 0.00501  [0.74445  0.76409]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   10 / 120  Source neutrons :  4936
+
+Running time :                  0:00:06
+Estimated running time :        -:--:--
+Estimated running time left :   -:--:--
+
+Estimated relative CPU usage :   797.9%
+
+k-eff (analog)    = 0.75477 +/- 0.00578  [0.74345  0.76609]
+k-eff (implicit)  = 0.75230 +/- 0.00490  [0.74271  0.76190]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   11 / 120  Source neutrons :  4828
+
+Running time :                  0:00:06
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:20
+
+Estimated relative CPU usage :   802.1%
+
+k-eff (analog)    = 0.75246 +/- 0.00571  [0.74126  0.76366]
+k-eff (implicit)  = 0.75206 +/- 0.00444  [0.74337  0.76076]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   12 / 120  Source neutrons :  5069
+
+Running time :                  0:00:06
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:20
+
+Estimated relative CPU usage :   793.8%
+
+k-eff (analog)    = 0.75137 +/- 0.00533  [0.74092  0.76181]
+k-eff (implicit)  = 0.75293 +/- 0.00414  [0.74481  0.76104]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   13 / 120  Source neutrons :  5162
+
+Running time :                  0:00:06
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:20
+
+Estimated relative CPU usage :   801.7%
+
+k-eff (analog)    = 0.75229 +/- 0.00499  [0.74251  0.76206]
+k-eff (implicit)  = 0.75269 +/- 0.00382  [0.74521  0.76017]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   14 / 120  Source neutrons :  4841
+
+Running time :                  0:00:07
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:19
+
+Estimated relative CPU usage :   797.8%
+
+k-eff (analog)    = 0.75134 +/- 0.00471  [0.74210  0.76058]
+k-eff (implicit)  = 0.75191 +/- 0.00362  [0.74481  0.75900]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   15 / 120  Source neutrons :  4909
+
+Running time :                  0:00:07
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:19
+
+Estimated relative CPU usage :   797.8%
+
+k-eff (analog)    = 0.74962 +/- 0.00471  [0.74039  0.75886]
+k-eff (implicit)  = 0.75154 +/- 0.00339  [0.74490  0.75818]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   16 / 120  Source neutrons :  5246
+
+Running time :                  0:00:07
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:19
+
+Estimated relative CPU usage :   793.8%
+
+k-eff (analog)    = 0.75035 +/- 0.00447  [0.74160  0.75911]
+k-eff (implicit)  = 0.75128 +/- 0.00318  [0.74505  0.75752]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   17 / 120  Source neutrons :  4756
+
+Running time :                  0:00:07
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:19
+
+Estimated relative CPU usage :   798.0%
+
+k-eff (analog)    = 0.74881 +/- 0.00447  [0.74005  0.75757]
+k-eff (implicit)  = 0.75184 +/- 0.00304  [0.74588  0.75779]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   18 / 120  Source neutrons :  5541
+
+Running time :                  0:00:07
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:19
+
+Estimated relative CPU usage :   801.1%
+
+k-eff (analog)    = 0.75179 +/- 0.00516  [0.74167  0.76191]
+k-eff (implicit)  = 0.75136 +/- 0.00290  [0.74567  0.75705]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   19 / 120  Source neutrons :  4695
+
+Running time :                  0:00:07
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:18
+
+Estimated relative CPU usage :   797.9%
+
+k-eff (analog)    = 0.75189 +/- 0.00489  [0.74231  0.76146]
+k-eff (implicit)  = 0.75154 +/- 0.00275  [0.74615  0.75694]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   20 / 120  Source neutrons :  4954
+
+Running time :                  0:00:08
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:18
+
+Estimated relative CPU usage :   793.6%
+
+k-eff (analog)    = 0.75162 +/- 0.00464  [0.74252  0.76072]
+k-eff (implicit)  = 0.75200 +/- 0.00265  [0.74681  0.75720]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   21 / 120  Source neutrons :  5126
+
+Running time :                  0:00:08
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:18
+
+Estimated relative CPU usage :   795.4%
+
+k-eff (analog)    = 0.75228 +/- 0.00446  [0.74353  0.76103]
+k-eff (implicit)  = 0.75279 +/- 0.00264  [0.74761  0.75797]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   22 / 120  Source neutrons :  4903
+
+Running time :                  0:00:08
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:18
+
+Estimated relative CPU usage :   797.8%
+
+k-eff (analog)    = 0.75220 +/- 0.00426  [0.74386  0.76055]
+k-eff (implicit)  = 0.75344 +/- 0.00260  [0.74834  0.75854]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   23 / 120  Source neutrons :  5220
+
+Running time :                  0:00:08
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:18
+
+Estimated relative CPU usage :   798.0%
+
+k-eff (analog)    = 0.75357 +/- 0.00429  [0.74516  0.76198]
+k-eff (implicit)  = 0.75338 +/- 0.00249  [0.74850  0.75825]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   24 / 120  Source neutrons :  4930
+
+Running time :                  0:00:08
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:17
+
+Estimated relative CPU usage :   801.1%
+
+k-eff (analog)    = 0.75436 +/- 0.00418  [0.74616  0.76256]
+k-eff (implicit)  = 0.75422 +/- 0.00253  [0.74927  0.75918]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   25 / 120  Source neutrons :  5004
+
+Running time :                  0:00:09
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:17
+
+Estimated relative CPU usage :   793.3%
+
+k-eff (analog)    = 0.75512 +/- 0.00408  [0.74711  0.76312]
+k-eff (implicit)  = 0.75464 +/- 0.00246  [0.74982  0.75946]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   26 / 120  Source neutrons :  5000
+
+Running time :                  0:00:09
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:17
+
+Estimated relative CPU usage :   797.9%
+
+k-eff (analog)    = 0.75581 +/- 0.00399  [0.74800  0.76362]
+k-eff (implicit)  = 0.75456 +/- 0.00236  [0.74992  0.75919]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   27 / 120  Source neutrons :  4849
+
+Running time :                  0:00:09
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:17
+
+Estimated relative CPU usage :   798.1%
+
+k-eff (analog)    = 0.75559 +/- 0.00384  [0.74807  0.76312]
+k-eff (implicit)  = 0.75495 +/- 0.00231  [0.75042  0.75948]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   28 / 120  Source neutrons :  5199
+
+Running time :                  0:00:09
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:17
+
+Estimated relative CPU usage :   794.3%
+
+k-eff (analog)    = 0.75646 +/- 0.00380  [0.74901  0.76391]
+k-eff (implicit)  = 0.75456 +/- 0.00226  [0.75014  0.75899]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   29 / 120  Source neutrons :  4704
+
+Running time :                  0:00:09
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:16
+
+Estimated relative CPU usage :   801.7%
+
+k-eff (analog)    = 0.75567 +/- 0.00375  [0.74832  0.76302]
+k-eff (implicit)  = 0.75478 +/- 0.00219  [0.75049  0.75907]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   30 / 120  Source neutrons :  5216
+
+Running time :                  0:00:09
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:16
+
+Estimated relative CPU usage :   793.8%
+
+k-eff (analog)    = 0.75599 +/- 0.00364  [0.74886  0.76312]
+k-eff (implicit)  = 0.75456 +/- 0.00213  [0.75038  0.75873]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   31 / 120  Source neutrons :  4870
+
+Running time :                  0:00:10
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:16
+
+Estimated relative CPU usage :   802.1%
+
+k-eff (analog)    = 0.75565 +/- 0.00354  [0.74872  0.76257]
+k-eff (implicit)  = 0.75438 +/- 0.00207  [0.75033  0.75842]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   32 / 120  Source neutrons :  5076
+
+Running time :                  0:00:10
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:16
+
+Estimated relative CPU usage :   801.8%
+
+k-eff (analog)    = 0.75568 +/- 0.00342  [0.74897  0.76239]
+k-eff (implicit)  = 0.75435 +/- 0.00200  [0.75043  0.75827]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   33 / 120  Source neutrons :  4827
+
+Running time :                  0:00:10
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:16
+
+Estimated relative CPU usage :   793.7%
+
+k-eff (analog)    = 0.75492 +/- 0.00340  [0.74824  0.76159]
+k-eff (implicit)  = 0.75464 +/- 0.00196  [0.75079  0.75848]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   34 / 120  Source neutrons :  5155
+
+Running time :                  0:00:10
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:16
+
+Estimated relative CPU usage :   801.4%
+
+k-eff (analog)    = 0.75487 +/- 0.00330  [0.74839  0.76134]
+k-eff (implicit)  = 0.75474 +/- 0.00190  [0.75101  0.75847]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   35 / 120  Source neutrons :  5127
+
+Running time :                  0:00:10
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:15
+
+Estimated relative CPU usage :   793.7%
+
+k-eff (analog)    = 0.75536 +/- 0.00325  [0.74900  0.76172]
+k-eff (implicit)  = 0.75532 +/- 0.00194  [0.75152  0.75912]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   36 / 120  Source neutrons :  4989
+
+Running time :                  0:00:11
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:15
+
+Estimated relative CPU usage :   798.8%
+
+k-eff (analog)    = 0.75579 +/- 0.00318  [0.74955  0.76202]
+k-eff (implicit)  = 0.75527 +/- 0.00189  [0.75157  0.75896]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   37 / 120  Source neutrons :  4910
+
+Running time :                  0:00:11
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:15
+
+Estimated relative CPU usage :   798.2%
+
+k-eff (analog)    = 0.75581 +/- 0.00310  [0.74975  0.76188]
+k-eff (implicit)  = 0.75465 +/- 0.00194  [0.75086  0.75844]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   38 / 120  Source neutrons :  4990
+
+Running time :                  0:00:11
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:15
+
+Estimated relative CPU usage :   793.9%
+
+k-eff (analog)    = 0.75580 +/- 0.00301  [0.74989  0.76170]
+k-eff (implicit)  = 0.75444 +/- 0.00190  [0.75072  0.75815]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   39 / 120  Source neutrons :  4968
+
+Running time :                  0:00:11
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:15
+
+Estimated relative CPU usage :   797.9%
+
+k-eff (analog)    = 0.75566 +/- 0.00294  [0.74990  0.76142]
+k-eff (implicit)  = 0.75483 +/- 0.00189  [0.75113  0.75853]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   40 / 120  Source neutrons :  5187
+
+Running time :                  0:00:11
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:14
+
+Estimated relative CPU usage :   796.5%
+
+k-eff (analog)    = 0.75623 +/- 0.00292  [0.75051  0.76195]
+k-eff (implicit)  = 0.75465 +/- 0.00185  [0.75103  0.75828]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   41 / 120  Source neutrons :  4917
+
+Running time :                  0:00:12
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:14
+
+Estimated relative CPU usage :   796.4%
+
+k-eff (analog)    = 0.75645 +/- 0.00286  [0.75086  0.76205]
+k-eff (implicit)  = 0.75483 +/- 0.00181  [0.75128  0.75839]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   42 / 120  Source neutrons :  4979
+
+Running time :                  0:00:12
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:14
+
+Estimated relative CPU usage :   797.8%
+
+k-eff (analog)    = 0.75659 +/- 0.00279  [0.75112  0.76206]
+k-eff (implicit)  = 0.75478 +/- 0.00177  [0.75131  0.75824]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   43 / 120  Source neutrons :  4842
+
+Running time :                  0:00:12
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:14
+
+Estimated relative CPU usage :   798.0%
+
+k-eff (analog)    = 0.75617 +/- 0.00276  [0.75076  0.76157]
+k-eff (implicit)  = 0.75507 +/- 0.00175  [0.75164  0.75851]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   44 / 120  Source neutrons :  5091
+
+Running time :                  0:00:12
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:14
+
+Estimated relative CPU usage :   797.6%
+
+k-eff (analog)    = 0.75606 +/- 0.00270  [0.75078  0.76135]
+k-eff (implicit)  = 0.75514 +/- 0.00171  [0.75178  0.75850]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   45 / 120  Source neutrons :  4902
+
+Running time :                  0:00:12
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:13
+
+Estimated relative CPU usage :   793.7%
+
+k-eff (analog)    = 0.75564 +/- 0.00267  [0.75040  0.76087]
+k-eff (implicit)  = 0.75556 +/- 0.00173  [0.75217  0.75895]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   46 / 120  Source neutrons :  5256
+
+Running time :                  0:00:12
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:13
+
+Estimated relative CPU usage :   797.7%
+
+k-eff (analog)    = 0.75605 +/- 0.00264  [0.75087  0.76123]
+k-eff (implicit)  = 0.75536 +/- 0.00170  [0.75203  0.75870]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   47 / 120  Source neutrons :  5093
+
+Running time :                  0:00:13
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:13
+
+Estimated relative CPU usage :   801.7%
+
+k-eff (analog)    = 0.75675 +/- 0.00268  [0.75150  0.76201]
+k-eff (implicit)  = 0.75528 +/- 0.00167  [0.75201  0.75855]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   48 / 120  Source neutrons :  4760
+
+Running time :                  0:00:13
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:13
+
+Estimated relative CPU usage :   797.9%
+
+k-eff (analog)    = 0.75664 +/- 0.00263  [0.75149  0.76179]
+k-eff (implicit)  = 0.75497 +/- 0.00166  [0.75171  0.75822]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   49 / 120  Source neutrons :  5140
+
+Running time :                  0:00:13
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:13
+
+Estimated relative CPU usage :   793.5%
+
+k-eff (analog)    = 0.75696 +/- 0.00259  [0.75187  0.76204]
+k-eff (implicit)  = 0.75557 +/- 0.00173  [0.75217  0.75897]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   50 / 120  Source neutrons :  4989
+
+Running time :                  0:00:13
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:13
+
+Estimated relative CPU usage :   797.9%
+
+k-eff (analog)    = 0.75723 +/- 0.00255  [0.75222  0.76223]
+k-eff (implicit)  = 0.75536 +/- 0.00171  [0.75200  0.75872]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   51 / 120  Source neutrons :  4849
+
+Running time :                  0:00:13
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:12
+
+Estimated relative CPU usage :   791.4%
+
+k-eff (analog)    = 0.75703 +/- 0.00251  [0.75211  0.76195]
+k-eff (implicit)  = 0.75502 +/- 0.00171  [0.75166  0.75838]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   52 / 120  Source neutrons :  5081
+
+Running time :                  0:00:14
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:12
+
+Estimated relative CPU usage :   799.2%
+
+k-eff (analog)    = 0.75708 +/- 0.00246  [0.75225  0.76190]
+k-eff (implicit)  = 0.75525 +/- 0.00170  [0.75193  0.75857]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   53 / 120  Source neutrons :  4931
+
+Running time :                  0:00:14
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:12
+
+Estimated relative CPU usage :   793.6%
+
+k-eff (analog)    = 0.75692 +/- 0.00242  [0.75218  0.76167]
+k-eff (implicit)  = 0.75525 +/- 0.00166  [0.75199  0.75851]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   54 / 120  Source neutrons :  5105
+
+Running time :                  0:00:14
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:12
+
+Estimated relative CPU usage :   801.5%
+
+k-eff (analog)    = 0.75706 +/- 0.00238  [0.75240  0.76173]
+k-eff (implicit)  = 0.75523 +/- 0.00163  [0.75203  0.75843]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   55 / 120  Source neutrons :  4889
+
+Running time :                  0:00:14
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:12
+
+Estimated relative CPU usage :   793.6%
+
+k-eff (analog)    = 0.75689 +/- 0.00234  [0.75230  0.76149]
+k-eff (implicit)  = 0.75524 +/- 0.00160  [0.75210  0.75838]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   56 / 120  Source neutrons :  4981
+
+Running time :                  0:00:14
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:11
+
+Estimated relative CPU usage :   801.9%
+
+k-eff (analog)    = 0.75668 +/- 0.00231  [0.75215  0.76121]
+k-eff (implicit)  = 0.75530 +/- 0.00157  [0.75221  0.75838]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   57 / 120  Source neutrons :  4991
+
+Running time :                  0:00:14
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:11
+
+Estimated relative CPU usage :   801.8%
+
+k-eff (analog)    = 0.75644 +/- 0.00228  [0.75197  0.76092]
+k-eff (implicit)  = 0.75528 +/- 0.00155  [0.75225  0.75832]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   58 / 120  Source neutrons :  5183
+
+Running time :                  0:00:15
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:11
+
+Estimated relative CPU usage :   794.6%
+
+k-eff (analog)    = 0.75669 +/- 0.00226  [0.75227  0.76111]
+k-eff (implicit)  = 0.75578 +/- 0.00160  [0.75265  0.75891]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   59 / 120  Source neutrons :  4960
+
+Running time :                  0:00:15
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:11
+
+Estimated relative CPU usage :   800.8%
+
+k-eff (analog)    = 0.75682 +/- 0.00222  [0.75247  0.76117]
+k-eff (implicit)  = 0.75565 +/- 0.00158  [0.75257  0.75874]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   60 / 120  Source neutrons :  5015
+
+Running time :                  0:00:15
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:11
+
+Estimated relative CPU usage :   794.0%
+
+k-eff (analog)    = 0.75699 +/- 0.00219  [0.75270  0.76128]
+k-eff (implicit)  = 0.75574 +/- 0.00155  [0.75270  0.75878]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   61 / 120  Source neutrons :  5021
+
+Running time :                  0:00:15
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:10
+
+Estimated relative CPU usage :   799.0%
+
+k-eff (analog)    = 0.75720 +/- 0.00216  [0.75296  0.76144]
+k-eff (implicit)  = 0.75568 +/- 0.00153  [0.75269  0.75867]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   62 / 120  Source neutrons :  4895
+
+Running time :                  0:00:15
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:10
+
+Estimated relative CPU usage :   797.9%
+
+k-eff (analog)    = 0.75715 +/- 0.00213  [0.75297  0.76132]
+k-eff (implicit)  = 0.75534 +/- 0.00154  [0.75231  0.75836]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   63 / 120  Source neutrons :  5054
+
+Running time :                  0:00:16
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:10
+
+Estimated relative CPU usage :   801.9%
+
+k-eff (analog)    = 0.75722 +/- 0.00210  [0.75311  0.76133]
+k-eff (implicit)  = 0.75536 +/- 0.00152  [0.75239  0.75834]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   64 / 120  Source neutrons :  5004
+
+Running time :                  0:00:16
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:10
+
+Estimated relative CPU usage :   798.0%
+
+k-eff (analog)    = 0.75731 +/- 0.00207  [0.75326  0.76136]
+k-eff (implicit)  = 0.75562 +/- 0.00151  [0.75265  0.75859]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   65 / 120  Source neutrons :  4928
+
+Running time :                  0:00:16
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:10
+
+Estimated relative CPU usage :   793.6%
+
+k-eff (analog)    = 0.75722 +/- 0.00204  [0.75323  0.76121]
+k-eff (implicit)  = 0.75584 +/- 0.00151  [0.75289  0.75879]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   66 / 120  Source neutrons :  5068
+
+Running time :                  0:00:16
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:10
+
+Estimated relative CPU usage :   801.9%
+
+k-eff (analog)    = 0.75729 +/- 0.00201  [0.75336  0.76122]
+k-eff (implicit)  = 0.75597 +/- 0.00149  [0.75305  0.75889]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   67 / 120  Source neutrons :  4947
+
+Running time :                  0:00:16
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:09
+
+Estimated relative CPU usage :   793.8%
+
+k-eff (analog)    = 0.75724 +/- 0.00198  [0.75336  0.76111]
+k-eff (implicit)  = 0.75596 +/- 0.00147  [0.75308  0.75883]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   68 / 120  Source neutrons :  5003
+
+Running time :                  0:00:17
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:09
+
+Estimated relative CPU usage :   797.1%
+
+k-eff (analog)    = 0.75719 +/- 0.00195  [0.75338  0.76101]
+k-eff (implicit)  = 0.75594 +/- 0.00145  [0.75311  0.75878]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   69 / 120  Source neutrons :  5178
+
+Running time :                  0:00:17
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:09
+
+Estimated relative CPU usage :   795.4%
+
+k-eff (analog)    = 0.75754 +/- 0.00195  [0.75372  0.76136]
+k-eff (implicit)  = 0.75611 +/- 0.00143  [0.75330  0.75892]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   70 / 120  Source neutrons :  4969
+
+Running time :                  0:00:17
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:09
+
+Estimated relative CPU usage :   800.2%
+
+k-eff (analog)    = 0.75781 +/- 0.00194  [0.75400  0.76161]
+k-eff (implicit)  = 0.75598 +/- 0.00142  [0.75319  0.75876]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   71 / 120  Source neutrons :  4837
+
+Running time :                  0:00:17
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:09
+
+Estimated relative CPU usage :   802.2%
+
+k-eff (analog)    = 0.75771 +/- 0.00192  [0.75395  0.76146]
+k-eff (implicit)  = 0.75617 +/- 0.00141  [0.75340  0.75894]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   72 / 120  Source neutrons :  4978
+
+Running time :                  0:00:17
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:08
+
+Estimated relative CPU usage :   793.5%
+
+k-eff (analog)    = 0.75757 +/- 0.00189  [0.75386  0.76128]
+k-eff (implicit)  = 0.75655 +/- 0.00144  [0.75372  0.75938]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   73 / 120  Source neutrons :  5168
+
+Running time :                  0:00:17
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:08
+
+Estimated relative CPU usage :   795.1%
+
+k-eff (analog)    = 0.75778 +/- 0.00188  [0.75409  0.76146]
+k-eff (implicit)  = 0.75636 +/- 0.00144  [0.75354  0.75917]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   74 / 120  Source neutrons :  4869
+
+Running time :                  0:00:18
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:08
+
+Estimated relative CPU usage :   797.6%
+
+k-eff (analog)    = 0.75770 +/- 0.00185  [0.75407  0.76134]
+k-eff (implicit)  = 0.75644 +/- 0.00142  [0.75366  0.75923]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   75 / 120  Source neutrons :  4778
+
+Running time :                  0:00:18
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:08
+
+Estimated relative CPU usage :   802.1%
+
+k-eff (analog)    = 0.75719 +/- 0.00190  [0.75346  0.76091]
+k-eff (implicit)  = 0.75648 +/- 0.00140  [0.75373  0.75922]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   76 / 120  Source neutrons :  5289
+
+Running time :                  0:00:18
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:08
+
+Estimated relative CPU usage :   797.4%
+
+k-eff (analog)    = 0.75723 +/- 0.00188  [0.75356  0.76091]
+k-eff (implicit)  = 0.75644 +/- 0.00138  [0.75373  0.75915]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   77 / 120  Source neutrons :  4897
+
+Running time :                  0:00:18
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:07
+
+Estimated relative CPU usage :   797.7%
+
+k-eff (analog)    = 0.75707 +/- 0.00186  [0.75343  0.76072]
+k-eff (implicit)  = 0.75680 +/- 0.00141  [0.75404  0.75957]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   78 / 120  Source neutrons :  5296
+
+Running time :                  0:00:18
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:07
+
+Estimated relative CPU usage :   796.9%
+
+k-eff (analog)    = 0.75748 +/- 0.00188  [0.75380  0.76117]
+k-eff (implicit)  = 0.75671 +/- 0.00140  [0.75397  0.75944]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   79 / 120  Source neutrons :  4858
+
+Running time :                  0:00:19
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:07
+
+Estimated relative CPU usage :   798.4%
+
+k-eff (analog)    = 0.75760 +/- 0.00186  [0.75396  0.76125]
+k-eff (implicit)  = 0.75692 +/- 0.00139  [0.75418  0.75965]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   80 / 120  Source neutrons :  4994
+
+Running time :                  0:00:19
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:07
+
+Estimated relative CPU usage :   795.2%
+
+k-eff (analog)    = 0.75770 +/- 0.00184  [0.75410  0.76131]
+k-eff (implicit)  = 0.75688 +/- 0.00138  [0.75418  0.75958]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   81 / 120  Source neutrons :  4869
+
+Running time :                  0:00:19
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:07
+
+Estimated relative CPU usage :   796.3%
+
+k-eff (analog)    = 0.75755 +/- 0.00182  [0.75398  0.76113]
+k-eff (implicit)  = 0.75686 +/- 0.00136  [0.75419  0.75952]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   82 / 120  Source neutrons :  5167
+
+Running time :                  0:00:19
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:07
+
+Estimated relative CPU usage :   793.4%
+
+k-eff (analog)    = 0.75771 +/- 0.00181  [0.75417  0.76125]
+k-eff (implicit)  = 0.75673 +/- 0.00135  [0.75409  0.75938]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   83 / 120  Source neutrons :  4877
+
+Running time :                  0:00:19
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:06
+
+Estimated relative CPU usage :   800.6%
+
+k-eff (analog)    = 0.75764 +/- 0.00179  [0.75414  0.76114]
+k-eff (implicit)  = 0.75689 +/- 0.00134  [0.75426  0.75952]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   84 / 120  Source neutrons :  5116
+
+Running time :                  0:00:19
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:06
+
+Estimated relative CPU usage :   792.9%
+
+k-eff (analog)    = 0.75778 +/- 0.00177  [0.75431  0.76125]
+k-eff (implicit)  = 0.75710 +/- 0.00134  [0.75447  0.75973]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   85 / 120  Source neutrons :  5081
+
+Running time :                  0:00:20
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:06
+
+Estimated relative CPU usage :   800.4%
+
+k-eff (analog)    = 0.75805 +/- 0.00177  [0.75458  0.76153]
+k-eff (implicit)  = 0.75688 +/- 0.00134  [0.75425  0.75952]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   86 / 120  Source neutrons :  4704
+
+Running time :                  0:00:20
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:06
+
+Estimated relative CPU usage :   792.7%
+
+k-eff (analog)    = 0.75779 +/- 0.00177  [0.75432  0.76126]
+k-eff (implicit)  = 0.75678 +/- 0.00133  [0.75417  0.75939]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   87 / 120  Source neutrons :  5038
+
+Running time :                  0:00:20
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:06
+
+Estimated relative CPU usage :   800.9%
+
+k-eff (analog)    = 0.75759 +/- 0.00176  [0.75414  0.76105]
+k-eff (implicit)  = 0.75671 +/- 0.00132  [0.75413  0.75930]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   88 / 120  Source neutrons :  5082
+
+Running time :                  0:00:20
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:05
+
+Estimated relative CPU usage :   793.1%
+
+k-eff (analog)    = 0.75754 +/- 0.00174  [0.75413  0.76096]
+k-eff (implicit)  = 0.75669 +/- 0.00130  [0.75413  0.75925]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   89 / 120  Source neutrons :  5129
+
+Running time :                  0:00:20
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:05
+
+Estimated relative CPU usage :   792.6%
+
+k-eff (analog)    = 0.75771 +/- 0.00173  [0.75432  0.76110]
+k-eff (implicit)  = 0.75660 +/- 0.00129  [0.75406  0.75913]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   90 / 120  Source neutrons :  4948
+
+Running time :                  0:00:21
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:05
+
+Estimated relative CPU usage :   800.6%
+
+k-eff (analog)    = 0.75778 +/- 0.00171  [0.75443  0.76114]
+k-eff (implicit)  = 0.75682 +/- 0.00130  [0.75428  0.75936]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   91 / 120  Source neutrons :  4962
+
+Running time :                  0:00:21
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:05
+
+Estimated relative CPU usage :   793.6%
+
+k-eff (analog)    = 0.75779 +/- 0.00169  [0.75447  0.76111]
+k-eff (implicit)  = 0.75681 +/- 0.00128  [0.75429  0.75932]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   92 / 120  Source neutrons :  4904
+
+Running time :                  0:00:21
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:05
+
+Estimated relative CPU usage :   795.8%
+
+k-eff (analog)    = 0.75764 +/- 0.00168  [0.75435  0.76094]
+k-eff (implicit)  = 0.75698 +/- 0.00128  [0.75447  0.75949]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   93 / 120  Source neutrons :  5106
+
+Running time :                  0:00:21
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:05
+
+Estimated relative CPU usage :   795.3%
+
+k-eff (analog)    = 0.75767 +/- 0.00166  [0.75440  0.76093]
+k-eff (implicit)  = 0.75694 +/- 0.00127  [0.75446  0.75943]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   94 / 120  Source neutrons :  5095
+
+Running time :                  0:00:21
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:04
+
+Estimated relative CPU usage :   800.6%
+
+k-eff (analog)    = 0.75784 +/- 0.00166  [0.75460  0.76109]
+k-eff (implicit)  = 0.75691 +/- 0.00125  [0.75445  0.75937]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   95 / 120  Source neutrons :  4836
+
+Running time :                  0:00:22
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:04
+
+Estimated relative CPU usage :   792.9%
+
+k-eff (analog)    = 0.75775 +/- 0.00164  [0.75453  0.76096]
+k-eff (implicit)  = 0.75699 +/- 0.00124  [0.75455  0.75943]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   96 / 120  Source neutrons :  5273
+
+Running time :                  0:00:22
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:04
+
+Estimated relative CPU usage :   800.2%
+
+k-eff (analog)    = 0.75808 +/- 0.00166  [0.75483  0.76133]
+k-eff (implicit)  = 0.75695 +/- 0.00123  [0.75454  0.75936]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   97 / 120  Source neutrons :  4903
+
+Running time :                  0:00:22
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:04
+
+Estimated relative CPU usage :   796.8%
+
+k-eff (analog)    = 0.75825 +/- 0.00165  [0.75502  0.76148]
+k-eff (implicit)  = 0.75702 +/- 0.00122  [0.75463  0.75941]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   98 / 120  Source neutrons :  4932
+
+Running time :                  0:00:22
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:04
+
+Estimated relative CPU usage :   792.3%
+
+k-eff (analog)    = 0.75831 +/- 0.00163  [0.75510  0.76151]
+k-eff (implicit)  = 0.75721 +/- 0.00122  [0.75482  0.75961]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle   99 / 120  Source neutrons :  4855
+
+Running time :                  0:00:22
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:03
+
+Estimated relative CPU usage :   800.9%
+
+k-eff (analog)    = 0.75814 +/- 0.00162  [0.75495  0.76132]
+k-eff (implicit)  = 0.75724 +/- 0.00121  [0.75487  0.75961]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  100 / 120  Source neutrons :  5268
+
+Running time :                  0:00:22
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:03
+
+Estimated relative CPU usage :   794.8%
+
+k-eff (analog)    = 0.75837 +/- 0.00163  [0.75518  0.76156]
+k-eff (implicit)  = 0.75726 +/- 0.00120  [0.75491  0.75961]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  101 / 120  Source neutrons :  4757
+
+Running time :                  0:00:23
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:03
+
+Estimated relative CPU usage :   789.5%
+
+k-eff (analog)    = 0.75822 +/- 0.00162  [0.75506  0.76139]
+k-eff (implicit)  = 0.75707 +/- 0.00120  [0.75472  0.75943]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  102 / 120  Source neutrons :  5016
+
+Running time :                  0:00:23
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:03
+
+Estimated relative CPU usage :   796.4%
+
+k-eff (analog)    = 0.75810 +/- 0.00160  [0.75496  0.76125]
+k-eff (implicit)  = 0.75683 +/- 0.00121  [0.75445  0.75921]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  103 / 120  Source neutrons :  4992
+
+Running time :                  0:00:23
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:03
+
+Estimated relative CPU usage :   796.6%
+
+k-eff (analog)    = 0.75797 +/- 0.00159  [0.75485  0.76110]
+k-eff (implicit)  = 0.75680 +/- 0.00120  [0.75444  0.75916]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  104 / 120  Source neutrons :  5008
+
+Running time :                  0:00:23
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:02
+
+Estimated relative CPU usage :   796.4%
+
+k-eff (analog)    = 0.75786 +/- 0.00158  [0.75475  0.76096]
+k-eff (implicit)  = 0.75675 +/- 0.00119  [0.75442  0.75909]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  105 / 120  Source neutrons :  5096
+
+Running time :                  0:00:23
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:02
+
+Estimated relative CPU usage :   791.6%
+
+k-eff (analog)    = 0.75788 +/- 0.00157  [0.75480  0.76095]
+k-eff (implicit)  = 0.75685 +/- 0.00118  [0.75452  0.75917]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  106 / 120  Source neutrons :  5042
+
+Running time :                  0:00:24
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:02
+
+Estimated relative CPU usage :   800.3%
+
+k-eff (analog)    = 0.75796 +/- 0.00156  [0.75491  0.76101]
+k-eff (implicit)  = 0.75679 +/- 0.00117  [0.75449  0.75909]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  107 / 120  Source neutrons :  4899
+
+Running time :                  0:00:24
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:02
+
+Estimated relative CPU usage :   792.5%
+
+k-eff (analog)    = 0.75789 +/- 0.00154  [0.75487  0.76092]
+k-eff (implicit)  = 0.75678 +/- 0.00116  [0.75450  0.75906]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  108 / 120  Source neutrons :  5072
+
+Running time :                  0:00:24
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:02
+
+Estimated relative CPU usage :   796.6%
+
+k-eff (analog)    = 0.75793 +/- 0.00153  [0.75494  0.76093]
+k-eff (implicit)  = 0.75678 +/- 0.00115  [0.75452  0.75904]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  109 / 120  Source neutrons :  5022
+
+Running time :                  0:00:24
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:02
+
+Estimated relative CPU usage :   796.6%
+
+k-eff (analog)    = 0.75800 +/- 0.00152  [0.75503  0.76097]
+k-eff (implicit)  = 0.75675 +/- 0.00114  [0.75451  0.75899]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  110 / 120  Source neutrons :  4741
+
+Running time :                  0:00:24
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:01
+
+Estimated relative CPU usage :   801.3%
+
+k-eff (analog)    = 0.75770 +/- 0.00153  [0.75470  0.76070]
+k-eff (implicit)  = 0.75690 +/- 0.00114  [0.75466  0.75914]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  111 / 120  Source neutrons :  5248
+
+Running time :                  0:00:25
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:01
+
+Estimated relative CPU usage :   792.1%
+
+k-eff (analog)    = 0.75774 +/- 0.00152  [0.75477  0.76071]
+k-eff (implicit)  = 0.75697 +/- 0.00113  [0.75474  0.75919]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  112 / 120  Source neutrons :  5010
+
+Running time :                  0:00:25
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:01
+
+Estimated relative CPU usage :   796.6%
+
+k-eff (analog)    = 0.75779 +/- 0.00150  [0.75484  0.76074]
+k-eff (implicit)  = 0.75682 +/- 0.00113  [0.75460  0.75904]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  113 / 120  Source neutrons :  4867
+
+Running time :                  0:00:25
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:01
+
+Estimated relative CPU usage :   801.4%
+
+k-eff (analog)    = 0.75766 +/- 0.00150  [0.75472  0.76059]
+k-eff (implicit)  = 0.75708 +/- 0.00115  [0.75482  0.75935]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  114 / 120  Source neutrons :  5257
+
+Running time :                  0:00:25
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:01
+
+Estimated relative CPU usage :   795.9%
+
+k-eff (analog)    = 0.75786 +/- 0.00150  [0.75492  0.76080]
+k-eff (implicit)  = 0.75703 +/- 0.00115  [0.75479  0.75928]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  115 / 120  Source neutrons :  4912
+
+Running time :                  0:00:25
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:00
+
+Estimated relative CPU usage :   800.1%
+
+k-eff (analog)    = 0.75794 +/- 0.00149  [0.75503  0.76086]
+k-eff (implicit)  = 0.75707 +/- 0.00114  [0.75484  0.75930]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  116 / 120  Source neutrons :  4888
+
+Running time :                  0:00:25
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:00
+
+Estimated relative CPU usage :   789.3%
+
+k-eff (analog)    = 0.75787 +/- 0.00148  [0.75498  0.76077]
+k-eff (implicit)  = 0.75688 +/- 0.00114  [0.75464  0.75912]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  117 / 120  Source neutrons :  4801
+
+Running time :                  0:00:26
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:00
+
+Estimated relative CPU usage :   800.4%
+
+k-eff (analog)    = 0.75755 +/- 0.00150  [0.75462  0.76049]
+k-eff (implicit)  = 0.75690 +/- 0.00113  [0.75468  0.75912]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  118 / 120  Source neutrons :  5295
+
+Running time :                  0:00:26
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:00
+
+Estimated relative CPU usage :   792.8%
+
+k-eff (analog)    = 0.75760 +/- 0.00149  [0.75468  0.76051]
+k-eff (implicit)  = 0.75671 +/- 0.00114  [0.75448  0.75894]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  119 / 120  Source neutrons :  4775
+
+Running time :                  0:00:26
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:00
+
+Estimated relative CPU usage :   800.7%
+
+k-eff (analog)    = 0.75735 +/- 0.00149  [0.75442  0.76028]
+k-eff (implicit)  = 0.75656 +/- 0.00114  [0.75433  0.75880]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.31 -- Static criticality source simulation
+
+Title: "godiva in a water tank: enrichment = 26.0%, radius = 8.7407 cm" 
+
+Active cycle  120 / 120  Source neutrons :  5056
+
+Running time :                  0:00:26
+Estimated running time :        0:00:26
+Estimated running time left :   0:00:00
+
+Estimated relative CPU usage :   795.6%
+
+k-eff (analog)    = 0.75718 +/- 0.00149  [0.75425  0.76010]
+k-eff (implicit)  = 0.75648 +/- 0.00113  [0.75426  0.75870]
+
+(O4) (MPI=1) (OMP=8) 
+------------------------------------------------------------
+
+Transport cycle completed in 24.7 seconds.
+
+Calculating activities...
+OK.
+
